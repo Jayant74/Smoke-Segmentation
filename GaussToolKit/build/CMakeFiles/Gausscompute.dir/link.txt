@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Gausscompute.dir/test.cpp.o -o Gausscompute 

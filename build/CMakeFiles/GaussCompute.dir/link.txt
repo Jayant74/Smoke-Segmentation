@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libGaussCompute.so -o libGaussCompute.so CMakeFiles/GaussCompute.dir/GaussToolKit/GaussCompute.cpp.o 

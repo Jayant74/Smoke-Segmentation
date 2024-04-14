@@ -1,0 +1,1 @@
+/usr/bin/g++ -fPIC -g -shared -Wl,-soname,libQuadTree.so -o libQuadTree.so CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o 
