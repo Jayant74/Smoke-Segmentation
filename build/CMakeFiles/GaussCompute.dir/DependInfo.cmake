@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jayant/testOpencv/GaussToolKit/GaussCompute.cpp" "CMakeFiles/GaussCompute.dir/GaussToolKit/GaussCompute.cpp.o" "gcc" "CMakeFiles/GaussCompute.dir/GaussToolKit/GaussCompute.cpp.o.d"
+  "/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/GaussCompute.cpp" "CMakeFiles/GaussCompute.dir/GaussToolKit/GaussCompute.cpp.o" "gcc" "CMakeFiles/GaussCompute.dir/GaussToolKit/GaussCompute.cpp.o.d"
   )
 
 # Targets to which this target links.

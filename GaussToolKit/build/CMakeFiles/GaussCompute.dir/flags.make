@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/lib/include/gsl -I/usr/local/lib/include -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/include -isystem /usr/local/include/opencv4
 
-CXX_FLAGS = "-lgslcblas -lm -lgsl" -std=gnu++17
+CXX_FLAGS = -std=gnu++17
 

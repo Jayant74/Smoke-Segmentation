@@ -1,5 +1,5 @@
-/home/jayant/testOpencv/build/CMakeFiles/QuadTree.dir
-/home/jayant/testOpencv/build/CMakeFiles/GaussCompute.dir
-/home/jayant/testOpencv/build/CMakeFiles/showImage.dir
-/home/jayant/testOpencv/build/CMakeFiles/edit_cache.dir
-/home/jayant/testOpencv/build/CMakeFiles/rebuild_cache.dir
+/home/jayant/workspace/Smoke-Segmentation/build/CMakeFiles/QuadTree.dir
+/home/jayant/workspace/Smoke-Segmentation/build/CMakeFiles/GaussCompute.dir
+/home/jayant/workspace/Smoke-Segmentation/build/CMakeFiles/showImage.dir
+/home/jayant/workspace/Smoke-Segmentation/build/CMakeFiles/edit_cache.dir
+/home/jayant/workspace/Smoke-Segmentation/build/CMakeFiles/rebuild_cache.dir

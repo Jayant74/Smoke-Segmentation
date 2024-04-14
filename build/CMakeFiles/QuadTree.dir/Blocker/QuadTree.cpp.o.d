@@ -1,6 +1,6 @@
 CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o: \
- /home/jayant/testOpencv/Blocker/QuadTree.cpp /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/jayant/workspace/Smoke-Segmentation/Blocker/QuadTree.cpp \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -147,7 +147,7 @@ CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/jayant/testOpencv/Blocker/include/QuadTree.h \
+ /home/jayant/workspace/Smoke-Segmentation/Blocker/include/QuadTree.h \
  /usr/local/include/opencv4/opencv2/core.hpp \
  /usr/local/include/opencv4/opencv2/core/cvdef.h \
  /usr/local/include/opencv4/opencv2/core/version.hpp \

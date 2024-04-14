@@ -1,4 +1,4 @@
-# Install script for directory: /home/jayant/testOpencv/GaussToolKit
+# Install script for directory: /home/jayant/workspace/Smoke-Segmentation/GaussToolKit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jayant/testOpencv/GaussToolKit/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,9 +4,9 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <armadillo>
 
 #include <opencv2/core.hpp>
-#include <gsl/gsl_statistics_float.h>
 
 class GaussCompute {
     public:
@@ -17,8 +17,8 @@ class GaussCompute {
 
     GaussCompute(const cv::Rect& region, const cv::Mat& image);
     
-    std::vector<float> extractSubMatrix(const cv::Rect& region, const cv::Mat& image);  // Extract array given by node->rect, perform twice on both image blocks
-    float computeFDR(std::vector<float>& block1, std::vector<float>& block2);   // Compute FDR betwen two blocks
+    std::vector<int> extractSubMatrix(const cv::Rect& region, const cv::Mat& image);  // Extract array given by node->rect, perform twice on both image blocks
+    float computeFDR(std::vector<int>& block1, std::vector<int>& block2);   // Compute FDR betwen two blocks
 
 };
 

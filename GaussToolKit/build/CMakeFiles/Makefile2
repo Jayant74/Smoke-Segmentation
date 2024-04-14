@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jayant/testOpencv/GaussToolKit
+CMAKE_SOURCE_DIR = /home/jayant/workspace/Smoke-Segmentation/GaussToolKit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jayant/testOpencv/GaussToolKit/build
+CMAKE_BINARY_DIR = /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/GaussCompute.dir/clean
 CMakeFiles/GaussCompute.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussCompute.dir/build.make CMakeFiles/GaussCompute.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussCompute.dir/build.make CMakeFiles/GaussCompute.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayant/testOpencv/GaussToolKit/build/CMakeFiles --progress-num=1,2 "Built target GaussCompute"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles --progress-num=1,2 "Built target GaussCompute"
 .PHONY : CMakeFiles/GaussCompute.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GaussCompute.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayant/testOpencv/GaussToolKit/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GaussCompute.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayant/testOpencv/GaussToolKit/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles 0
 .PHONY : CMakeFiles/GaussCompute.dir/rule
 
 # Convenience name for target.

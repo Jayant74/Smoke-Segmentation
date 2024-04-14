@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/QuadTree.dir/QuadTree.cpp.o"
   "CMakeFiles/QuadTree.dir/QuadTree.cpp.o.d"
-  "libQuadTree.a"
   "libQuadTree.pdb"
+  "libQuadTree.so"
 )
 
 # Per-language clean rules from dependency scanning.

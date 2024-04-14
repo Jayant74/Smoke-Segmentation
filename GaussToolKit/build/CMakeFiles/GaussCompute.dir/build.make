@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jayant/testOpencv/GaussToolKit
+CMAKE_SOURCE_DIR = /home/jayant/workspace/Smoke-Segmentation/GaussToolKit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jayant/testOpencv/GaussToolKit/build
+CMAKE_BINARY_DIR = /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GaussCompute.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/GaussCompute.dir/flags.make
 CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o: CMakeFiles/GaussCompute.dir/flags.make
 CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o: ../GaussCompute.cpp
 CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o: CMakeFiles/GaussCompute.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayant/testOpencv/GaussToolKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o -MF CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o.d -o CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o -c /home/jayant/testOpencv/GaussToolKit/GaussCompute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o -MF CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o.d -o CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o -c /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/GaussCompute.cpp
 
 CMakeFiles/GaussCompute.dir/GaussCompute.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaussCompute.dir/GaussCompute.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayant/testOpencv/GaussToolKit/GaussCompute.cpp > CMakeFiles/GaussCompute.dir/GaussCompute.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/GaussCompute.cpp > CMakeFiles/GaussCompute.dir/GaussCompute.cpp.i
 
 CMakeFiles/GaussCompute.dir/GaussCompute.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaussCompute.dir/GaussCompute.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayant/testOpencv/GaussToolKit/GaussCompute.cpp -o CMakeFiles/GaussCompute.dir/GaussCompute.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/GaussCompute.cpp -o CMakeFiles/GaussCompute.dir/GaussCompute.cpp.s
 
 # Object files for target GaussCompute
 GaussCompute_OBJECTS = \
@@ -93,7 +93,7 @@ GaussCompute_EXTERNAL_OBJECTS =
 libGaussCompute.a: CMakeFiles/GaussCompute.dir/GaussCompute.cpp.o
 libGaussCompute.a: CMakeFiles/GaussCompute.dir/build.make
 libGaussCompute.a: CMakeFiles/GaussCompute.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jayant/testOpencv/GaussToolKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGaussCompute.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libGaussCompute.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/GaussCompute.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GaussCompute.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/GaussCompute.dir/clean:
 .PHONY : CMakeFiles/GaussCompute.dir/clean
 
 CMakeFiles/GaussCompute.dir/depend:
-	cd /home/jayant/testOpencv/GaussToolKit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jayant/testOpencv/GaussToolKit /home/jayant/testOpencv/GaussToolKit /home/jayant/testOpencv/GaussToolKit/build /home/jayant/testOpencv/GaussToolKit/build /home/jayant/testOpencv/GaussToolKit/build/CMakeFiles/GaussCompute.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jayant/workspace/Smoke-Segmentation/GaussToolKit /home/jayant/workspace/Smoke-Segmentation/GaussToolKit /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build /home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles/GaussCompute.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GaussCompute.dir/depend
 

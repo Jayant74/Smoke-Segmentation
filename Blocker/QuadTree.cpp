@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <iostream>
 
-#include <QuadTree.h>
+#include "include/QuadTree.h"
 
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -64,7 +64,7 @@ void quadTree::traverseAndPrint(const quadTree* node, const cv::Mat& image) {
     
     // Recursively visit each child via node->(quadrant name)
     */
-    cv::rectangle(image, node->region, cv::Scalar(0,0,255),1);
+    //cv::rectangle(image, node->region, cv::Scalar(0,0,255),1);
     traverseAndPrint(node->topLeft, image); 
     traverseAndPrint(node->topRight, image);
     traverseAndPrint(node->botLeft, image);

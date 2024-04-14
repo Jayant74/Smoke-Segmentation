@@ -3,22 +3,23 @@
 #include <cmath>
 
 #include "include/GaussCompute.h"
-#include "gsl/gsl_statistics_float.h"
 
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
+#include <armadillo>
 
+using namespace arma;
 
 GaussCompute::GaussCompute(const cv::Rect& region, const cv::Mat& image):
     region(region), image(image) {}
 
 
-std::vector<float> GaussCompute::extractSubMatrix(const cv::Rect& region, const cv::Mat& image) {
+std::vector<int> GaussCompute::extractSubMatrix(const cv::Rect& region, const cv::Mat& image) {
     cv::Mat submatrix = image(cv::Range(region.x,region.x+region.width),cv::Range(region.y,region.y+region.width));
-    std::vector<float> array;
-    array.reserve(submatrix.rows*submatrix.cols*submatrix.channels());
+    std::vector<int> array;
+    array.reserve(submatrix.rows*submatrix.cols);
 
     if(submatrix.isContinuous()) {
         array.assign(submatrix.datastart, submatrix.dataend);
@@ -27,21 +28,40 @@ std::vector<float> GaussCompute::extractSubMatrix(const cv::Rect& region, const 
     else {
         for (int i = 0; i<submatrix.rows; ++i) {
             float* row = submatrix.ptr<float>(i);
-            array.insert(array.end(),row,row+submatrix.cols*submatrix.channels());
+            array.insert(array.end(),row,row+submatrix.cols);
         }
     }
     return array;
 }
 
-float GaussCompute::computeFDR(std::vector<float>& block1, std::vector<float>& block2) {
-    float block1_mean = gsl_stats_float_mean(reinterpret_cast<float*>(block1.data()),sizeof(float),block1.size());
-    float block2_mean = gsl_stats_float_mean(reinterpret_cast<float*>(block2.data()),sizeof(float),block2.size());
 
-    float block1_var = gsl_stats_float_variance_m(reinterpret_cast<float*>(block1.data()),sizeof(float),block1.size(),block1_mean);
-    float block2_var = gsl_stats_float_variance_m(reinterpret_cast<float*>(block2.data()),sizeof(float),block2.size(),block2_mean);
-    float FDR = ( pow((block1_mean-block2_mean),2) )/( pow(block1_var,2)+pow(block2_var,2) );
+
+float GaussCompute::computeFDR(std::vector<int>& block1, std::vector<int>& block2) {
+    // Initialize Armadillo vectors of the appropriate size
+    arma::vec armaBlock1(block1.size());
+    arma::vec armaBlock2(block2.size());
+
+    // Manually copy and convert integers to doubles
+    for (size_t i = 0; i < block1.size(); ++i) {
+        armaBlock1(i) = static_cast<double>(block1[i]);
+    }
+    for (size_t i = 0; i < block2.size(); ++i) {
+        armaBlock2(i) = static_cast<double>(block2[i]);
+    }
+
+    // Calculate means
+    double block1_mean = arma::mean(armaBlock1);
+    double block2_mean = arma::mean(armaBlock2);
+
+    // Calculate standard deviations
+    double block1_std = arma::stddev(armaBlock1);
+    double block2_std = arma::stddev(armaBlock2);
+
+
+    float FDR = ( pow((block1_mean-block2_mean),2) )/( pow(block1_std,2)+pow(block2_std,2) );
 
     return FDR;
 }
+
 
 

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jayant/testOpencv/Blocker/QuadTree.cpp" "CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o" "gcc" "CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o.d"
+  "/home/jayant/workspace/Smoke-Segmentation/Blocker/QuadTree.cpp" "CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o" "gcc" "CMakeFiles/QuadTree.dir/Blocker/QuadTree.cpp.o.d"
   )
 
 # Targets to which this target links.
