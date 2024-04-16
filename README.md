@@ -16,7 +16,24 @@ The slightly dramatic title of this repo is the general theme the algorithm play
 
 To measure change in appearance of an image can be tackled in a number of ways. At the time of taking this class, I was learning about the different kinds of metric distances between data. This includes things like the 'total variation distance', 'Mahalanobis distance', 'KL-divergence', and so on. The simplicity of calculating a linear discriminant such as the Fisher Discriminant Ratio (FDR) piqued my interest (and my schedule) as an appropriate metric. In this algorithm, an image is duplicated and divvied into a square grid. A baseline Gaussian blur of $\Sigma$ variance was applied to the original image and a Gaussian blur of higher $\Sigma$ to its copy. The FDR was measured for each corresponding cell in the grid, and the metric distance was recorded.
 
-# Clustering
+![example](https://github.com/Jayant74/Smoke-Segmentation/assets/129622540/8549e60b-0681-4130-ba7e-5896b99bca14)
+Figure 1. Splittig the image into equall sized cells using a quad-tree algorithm. This way the leaf node size can be specified, and data retrieval is inherently faster (and better organized). 
 
-A standard K-means clustering model was implemented to cluster the distances in the image, and it became clear which regions had greater distances of appearance to their Gaussian blurred correspondences. The grid square size could be changed from 40x40 pixels to 1x1 pixel. The variable resolution allowed for cleaner segmentation of individual pixels. 
+# Thresholding
 
+The Fisher Discriminant Ratio is computed for each leaf node between the regular image and the blurred image. The mean of the stored FDRs can be used as a threhold criteria which is how the following result was produced.
+
+
+![original](https://github.com/Jayant74/Smoke-Segmentation/assets/129622540/73e6d3ec-6b85-49e4-9e8d-0fd15e7ef7fa)        
+Figure 2. Original Image
+
+
+
+![Cr_channel](https://github.com/Jayant74/Smoke-Segmentation/assets/129622540/12a214ae-331b-48fe-92a5-6ace03c1ea79)             
+Figure 3. Clustered Image
+
+
+
+# Next Steps
+
+Using the mean as a means to threshold is often not an accurate thresholder. The mean can be easily skewed with outliers, which would cause the sorting of FDRs to include greater distances. In the next steps I will implement a K-means algorithm to cluster the FDR data, in this way the centroids can be ranked. This would be optimal as the various scenarios of smoke can be recognized. For example, pure smoke vs. smoke layer vs. no smoke. 
