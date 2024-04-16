@@ -10,7 +10,7 @@ Wildfire image data is diverse in terms of things like lighting, color content, 
 
 # Data Preprocessing
 
-The slightly dramatic title of this repo was the general theme my algorithm plays with. The charateristic of smoke is fluid and transluscent. It's shape and color relies on the environment it resides in. Hence, smoke is a kind of specific noise in which it blurs its surroundings. The algorithm exploits this very idea, and introduces more noise into the image via applying a Gaussian blur. The regions of the image with no smoke will appear blurred. On the contrary, in the regions where smoke is present, applying blur on smoke will not affect its appearance nearly as much. So, the preprocessing of an image is to apply a Gaussian blur and measure the relative change in appearance.
+The slightly dramatic title of this repo is the general theme the algorithm plays with. The charateristic of smoke is fluid and transluscent. It's shape and color relies on the environment it resides in. Hence, smoke is a kind of specific noise in which it blurs its surroundings. The algorithm exploits this very idea, and introduces more noise into the image via applying a Gaussian blur. The regions of the image with no smoke will appear blurred. On the contrary, in the regions where smoke is present, applying blur on smoke will not affect its appearance nearly as much. So, the preprocessing of an image is to apply a Gaussian blur and measure the relative change in appearance.
 
 # Measure of Appearance
 
