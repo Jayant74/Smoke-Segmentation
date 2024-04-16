@@ -30,7 +30,7 @@ Figure 2. Original Image
 
 
 ![Cr_channel](https://github.com/Jayant74/Smoke-Segmentation/assets/129622540/12a214ae-331b-48fe-92a5-6ace03c1ea79)             
-Figure 3. The threshold to produce this particular result finding the FDR values greater than mean/3. This was done empirically. 
+Figure 3. The algorithm segements everything that it considers NOT to be smoke. The threshold to produce this particular result, was: finding all FDR values greater than mean/3. This was done empirically. 
 
 
 
