@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGaussCompute.a CMakeFiles/GaussCompute.dir/GaussToolKit/GaussCompute.cpp.o
+/usr/bin/ranlib libGaussCompute.a

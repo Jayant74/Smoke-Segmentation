@@ -1,0 +1,3 @@
+/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles/GaussCompute.dir
+/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles/edit_cache.dir
+/home/jayant/workspace/Smoke-Segmentation/GaussToolKit/build/CMakeFiles/rebuild_cache.dir

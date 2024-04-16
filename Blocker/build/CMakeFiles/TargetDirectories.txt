@@ -1,0 +1,3 @@
+/home/jayant/workspace/Smoke-Segmentation/Blocker/build/CMakeFiles/QuadTree.dir
+/home/jayant/workspace/Smoke-Segmentation/Blocker/build/CMakeFiles/edit_cache.dir
+/home/jayant/workspace/Smoke-Segmentation/Blocker/build/CMakeFiles/rebuild_cache.dir
