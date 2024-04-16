@@ -30,10 +30,12 @@ Figure 2. Original Image
 
 
 ![Cr_channel](https://github.com/Jayant74/Smoke-Segmentation/assets/129622540/12a214ae-331b-48fe-92a5-6ace03c1ea79)             
-Figure 3. Clustered Image
+Figure 3. The threshold to produce this particular result finding the FDR values greater than mean/3. This was done empirically. 
 
 
 
 # Next Steps
 
 Using the mean as a means to threshold is often not an accurate thresholder. The mean can be easily skewed with outliers, which would cause the sorting of FDRs to include greater distances. In the next steps I will implement a K-means algorithm to cluster the FDR data, in this way the centroids can be ranked. This would be optimal as the various scenarios of smoke can be recognized. For example, pure smoke vs. smoke layer vs. no smoke. 
+
+The next idea has to do with hierarchically querying nodes. If a parent node's FDR is lower than its siblings' respective FDRs, then only that node will be further subdivided. In this way, the algorithm will better emphasize regional comparisons of the image, and thresholding the FDRs will be more accurate.
